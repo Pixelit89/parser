@@ -1,8 +1,8 @@
 require 'rubygems'
-require 'curb'
 require 'nokogiri'
 require 'csv'
 require 'open-uri'
+
 def parse url, output_file_name
   html = open(url)
   doc = Nokogiri::HTML(html)
